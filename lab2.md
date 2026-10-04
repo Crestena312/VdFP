@@ -97,7 +97,7 @@
 ;; CL-USER> (list-set-intersection '(1 2 3 4) '(3 4 5 6))
 ;; (3 4) ; порядок може відрізнятись
 
-(defun atom-in-list-p (item lst)
+(defun estlist (item lst)
   (cond
     ((null lst)
      nil)
@@ -106,13 +106,13 @@
      t)
 
     (t
-     (atom-in-list-p item (cdr lst)))))
+     (estlist item (cdr lst)))))
     (defun list-set-intersection (set1 set2)
   (cond
     ((null set1)
      nil)
 
-    ((atom-in-list-p (car set1) set2)
+    ((estlist (car set1) set2)
      (cons (car set1)
            (list-set-intersection (cdr set1) set2)))
     (t

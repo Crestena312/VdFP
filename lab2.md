@@ -37,7 +37,7 @@
 
 ### Варіант 17
 
-### Лістинг функції remove-seconds-and-thirds
+### Функція remove-seconds-and-thirds
 
 ```lisp
 ;; 1. Написати функцію remove-seconds-and-thirds , яка видаляє зі списку
@@ -93,7 +93,7 @@
   t)
 ```
 
-### Лістинг функції list-set-intersection
+### Функція list-set-intersection
 
 ```lisp
 ;; 2. Написати функцію list-set-intersection , яка визначає перетин двох множин,
